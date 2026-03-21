@@ -33,3 +33,7 @@ print(top_five_features.head(5))
 #When max_depth is unrestricted, the model overfits by memorizing the training data, achieving 100% training accuracy
 # but only 95.6% test accuracy. Setting max_depth to 3 reduced overfitting, bringing training and test accuracy closer
 # together at 98% and 96.5%
+
+#Feature importance improves the interpretability of decision trees by revealing which features drive predictions most.
+# In this model mean concave points alone accounted for 66.5% of the decision making, followed by worst perimeter and
+# worst texture, making it easy to understand which tumor measurements are most critical for diagnosis.
