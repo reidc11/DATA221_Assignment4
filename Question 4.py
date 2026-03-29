@@ -19,6 +19,8 @@ features_test_scaled = scaler.transform(features_test)
 breast_cancer_model = MLPClassifier(hidden_layer_sizes=(64, 32), activation='relu',max_iter=500, random_state=42)
 breast_cancer_model.fit(features_train_scaled, labels_train)
 
+predicted_breast_cancer= breast_cancer_model.predict(features_test_scaled)
+
 train_accuracy = accuracy_score(labels_train, breast_cancer_model.predict(features_train_scaled))
 test_accuracy  = accuracy_score(labels_test,  breast_cancer_model.predict(features_test_scaled))
 
